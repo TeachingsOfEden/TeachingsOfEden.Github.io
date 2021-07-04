@@ -1,0 +1,241 @@
+
+body {
+    margin: 0%  
+}
+
+
+h1 {
+    font-family: garamound;
+	font-size: 30px;
+	font-weight:bold;
+	font-style:underline;
+    text-align: center;
+    margin-top: 4%; 
+    color: black; 
+	margin-top:5%;
+}
+
+
+h1:hover {
+    transform: scale(1.1); 
+    transition: transform 1.5s; 
+}
+
+h2 {
+	color: black;
+	font-family: Garamond;
+	text-align: center;
+	font-size: 40px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 25;
+	line-height: 1.6;
+}
+
+.white-text {
+    color: white;
+}
+
+p {
+    font-family: garamound;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 25px; 
+    padding-right: 25px;
+}
+
+
+.center {
+
+}
+
+
+q {
+    font-style: italic;
+}
+
+
+img {
+    border-radius: 10px;
+    max-width: 100%;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+footer {
+    padding: 2%;
+    background-color: cornsilk;
+}
+
+
+
+.Navbar {
+    overflow: hidden; 
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1; 
+
+}
+
+
+
+.Navbar a {
+    float: right;
+    display: block; 
+    color: black;
+    padding: 20px 24px;
+    font-family: garamound; 
+    font-size: 28px;
+    text-align: center; 
+    position: relative; 
+}
+
+
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;} 
+}
+
+
+X {
+	 border-style: ridge;
+	 border-width: 2.2px;
+	 border-color: rgba(1, 1, 1, 0.75);
+}
+
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%; 
+        font-size: 12px;
+    }
+}
+
+
+.Navbar a:hover {
+    color: navy; 
+    font-weight: bold; 
+}
+
+
+.video {
+	margin: 0 auto;
+	background-image: url('sky.jpg');
+}
+
+
+.Video_Text { 
+    color: black;
+	font-family:garamound;
+	background-image: url('sky.jpg');
+    width: 100%;
+    padding: 20px; 
+    position: relative; 
+    -webkit-animation: moveVideoText 5.75s;
+    animation-duration: 1s;
+}
+
+
+@keyframes moveVideoText {
+  from {bottom: -400px;}
+  to {bottom: 0px;}
+}
+
+
+
+* { 
+    box-sizing: border-box; 
+} 
+
+.Column_1 {
+	color: black;
+    float: left;
+    width: 50%; 
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px; 
+    background-color: aliceblue; 
+}
+
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 12px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: midnightblue;
+}
+
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.Row:after {
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+
+input[type=text] {
+    width: 40%; 
+    padding: 12px;
+    border: 1px black; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+	border-color:rgba(1,1,1,0.1;
+    margin-bottom: 16px;
+    resize: vertical; 
+    font-family: garamound  ;
+	background-color:white;;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset;
+}
+
+input[type=submit] {
+    background-color: midnightblue;
+    color: snow;
+    font-weight: bold; 
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    font-family: garamound;
+	width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: snow; 
+    color: w; 
+    transform: scale(1.3);
+    transition: transform 2s;
+}
+
+form {
+    border-radius: 5px;
+	border-color:black;
+    background-color: white; 
+    padding: 10px; 
+    font-family: garamound;
+}
